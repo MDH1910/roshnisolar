@@ -2,6 +2,8 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 import { Lead, NewLeadData, LeadStatus } from '@/types/leads';
 import { SupportTicket, NewTicketData, TicketStatus } from '@/types/support';
 import { useAuth } from './AuthContext';
+import { supabase } from '@/types/supabaseClient';
+
 
 interface DataContextType {
   leads: Lead[];
